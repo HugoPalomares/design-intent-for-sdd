@@ -1,6 +1,6 @@
 <div align="center">
     <h1>📋 Spec-Driven Development Boilerplate</h1>
-    <h3><em>From specifications to software - automatically.</em></h3>
+    <h3><em>From intent to software - An AI workflow</em></h3>
 </div>
 
 <p align="center">
