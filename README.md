@@ -58,6 +58,8 @@ This guide shows you exactly how to work with AI to build real software prototyp
 
 ## Getting Started (One-Time Setup)
 
+**Depedencies:** This project is setup to work with Claude Code, Figma and Fluent MCP servers.
+
 Clone the repo and say exactly this to your AI:
 ```
 Onboard yourself to this project by reading the CLAUDE.md file before we can continue.
