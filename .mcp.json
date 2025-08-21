@@ -1,16 +1,8 @@
 {
-  "mcpServers": {
-    "fluent-pilot": {
-      "type": "stdio",
-      "command": "mcp-remote",
-      "args": [
-        "https://chat.fluentui.dev/sse"
-      ],
-      "env": {}
-    },
-    "figma-dev-mode-mcp-server": {
-      "type": "http",
-      "url": "http://127.0.0.1:3845/mcp"
-    }
-  }
+ "mcpServers": {
+   "figma-dev-mode-mcp-server": {
+     "type": "http",
+     "url": "http://127.0.0.1:3845/mcp"
+   }
+ }
 }
