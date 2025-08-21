@@ -58,14 +58,12 @@ This guide shows you exactly how to work with AI to build real software prototyp
 
 ## Getting Started (One-Time Setup)
 
-**If you cloned this repository**: Structure is already created. Skip to Day 0 Example.
-
-**If you only have the markdown files**: Say exactly this to your AI:
+Clone the repo and say exactly this to your AI:
 ```
-Read the SETUP_INSTRUCTIONS.md file and create the project structure for me
+Onboard yourself to this project by reading the CLAUDE.md file before we can continue.
 ```
 
-✅ **Outcome**: A complete project structure with all folders, templates, and rules configured. Ready to start building.
+✅ **Outcome**: AI now understands how the SDD workflow is, what to expect, what commands and sub-agents are available and is ready to work with you on your first feature.
 
 ---
 
