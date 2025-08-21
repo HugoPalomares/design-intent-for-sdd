@@ -1,6 +1,11 @@
-# Prototyping with Spec-driven development
+<div align="center">
+    <h1>📋 Spec-Driven Development Boilerplate</h1>
+    <h3><em>From specifications to software - automatically.</em></h3>
+</div>
 
-**Author:** Hugo Palomares ([@hugopalomares](https://github.com/hugopalomares) | [@hugopa_microsoft](https://github.com/hugopa_microsoft))
+<p align="center">
+    <strong>Transform your specifications into working code through AI, treating specs as the primary development artifact.</strong>
+</p>
 
 > ## 🚀 **What's new?**
 > - **Design Intent documentation** - A new workflow for documenting your design UX decisions
@@ -8,7 +13,48 @@
 
 ---
 
+>[!NOTE]
+>This repository is heavily influenced by and based on the work of [John Lam](https://github.com/jflam).
+
+---
+
 This guide shows you exactly how to work with AI to build real software prototypes. No coding knowledge needed.
+
+## Table of Contents
+
+- [What is Spec-Driven Development?](#what-is-spec-driven-development)
+- [Core Philosophy](#core-philosophy)
+- [How SDD Differs from Vibe Coding](#how-sdd-differs-from-vibe-coding)
+- [Getting Started (One-Time Setup)](#getting-started-one-time-setup)
+- [Day 0 Example (your first feature!)](#day-0-example-your-first-feature)
+- [Day 1 Example (continuing your project)](#day-1-example-continuing-your-project)
+- [Advanced Techniques](#advanced-techniques)
+
+---
+
+## What is Spec-Driven Development?
+
+**SDD treats specifications as executable code.** Instead of documentation that becomes outdated, your specifications generate the implementation and evolve with your project. When you write a clear spec, AI builds exactly what you described.
+
+## Core Philosophy
+
+- **Specifications ARE the source of truth** - Your PRD directly generates working software
+- **Design intent persists** - Every decision is captured and reused across features  
+- **AI as implementer** - You define what to build; AI handles how to build it
+- **Quality through clarity** - Ambiguous specs create bugs; precise specs create great software
+
+## How SDD Differs from Vibe Coding
+
+| Vibe Coding | Spec-Driven Development |
+|-------------|-------------------------|
+| "Make it feel right" through iteration | Define "right" upfront, then generate |
+| Design decisions lost in chat history | Design intent documented and reusable |
+| Inconsistent AI outputs | Consistent results from clear specifications |
+| Tribal knowledge disappears | Institutional memory that grows over time |
+
+**The key difference:** Vibe coding optimizes for speed. SDD optimizes for sustainable quality at AI speed.
+
+---
 
 ## Getting Started (One-Time Setup)
 
