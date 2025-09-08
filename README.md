@@ -1,6 +1,11 @@
-# Prototyping with Spec-driven development
+<div align="center">
+    <h1>📋 Spec-Driven Development Boilerplate</h1>
+    <h3><em>From intent to software - An AI workflow</em></h3>
+</div>
 
-**Author:** Hugo Palomares ([@hugopalomares](https://github.com/hugopalomares) | [@hugopa_microsoft](https://github.com/hugopa_microsoft))
+<p align="center">
+    <strong>Transform your specifications into working code through AI, treating specs as the primary development artifact.</strong>
+</p>
 
 > ## 🚀 **What's new?**
 > - **Design Intent documentation** - A new workflow for documenting your design UX decisions
@@ -10,14 +15,14 @@
 
 ## Getting Started (One-Time Setup)
 
-**If you cloned this repository**: Structure is already created. Skip to Day 0 Example.
+**Depedencies:** This project is setup to work with Claude Code and Figma MCP server.
 
-**If you only have the markdown files**: Say exactly this to your AI:
+Clone the repo and say exactly this to your AI:
 ```
-Read the SETUP_INSTRUCTIONS.md file and create the project structure for me
+Onboard yourself to this project by reading the CLAUDE.md file before we can continue.
 ```
 
-✅ **Outcome**: A complete project structure with all folders, templates, and rules configured. Ready to start building.
+✅ **Outcome**: AI now understands how the SDD workflow is, what to expect, what commands and sub-agents are available and is ready to work with you on your first feature.
 
 ---
 
