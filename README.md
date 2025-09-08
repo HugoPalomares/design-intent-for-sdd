@@ -8,8 +8,6 @@
 
 ---
 
-This guide shows you exactly how to work with AI to build real software prototypes. No coding knowledge needed.
-
 ## Getting Started (One-Time Setup)
 
 **If you cloned this repository**: Structure is already created. Skip to Day 0 Example.
