@@ -81,8 +81,22 @@ After reviewing the summary:
 
 ## What Gets Documented
 
-Only patterns you explicitly approve will be documented using the established design intent template with focus on:
-- Design decisions (not implementation details)
-- When to use the pattern
-- Why the pattern was chosen
-- Which components implement it
+Only patterns you explicitly approve will be documented using the **design intent template** at `/design-intent/design-intent-template.md`.
+
+**Must follow template structure exactly**:
+- Use the template headings: Context, Decision, When to Use, Components, Why, Dependencies
+- Follow the writing guidelines in the template
+- Focus on design decisions, not implementation details
+- Keep content concise and agent-friendly
+- Apply the template test: "If this component changed, would this design intent become wrong?"
+
+**Document only your design dialect**:
+- Custom layout patterns and compositions
+- Contextual spacing decisions that deviate from design system
+- Component usage rules specific to your application
+- Visual treatments that create your unique design voice
+
+**Do NOT document design system artifacts**:
+- Standard design tokens (colors, typography scales)
+- Default component behaviors from Fluent UI
+- Standard responsive breakpoints

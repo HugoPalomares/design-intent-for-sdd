@@ -38,7 +38,7 @@
 
 **Learn spec-driven development first**: [github/spec-kit](https://github.com/github/spec-kit)
 
-This project adds design intent management on top of the spec-driven development workflow. You'll need to understand feature specs and implementation plans before adding design consistency.
+This project adds design intent workflows on top of spec-driven development. You'll need to understand feature specs and implementation plans before adding design consistency.
 
 ---
 
@@ -47,8 +47,8 @@ This project adds design intent management on top of the spec-driven development
 **Dependencies:** Claude Code and Figma MCP server
 
 ```bash
-git clone [this-repo]
-cd [repo-name]
+git clone https://github.com/HugoPalomares/design-intent-for-sdd.git
+cd design-intent-for-sdd
 ```
 
 **Onboard your AI:**
