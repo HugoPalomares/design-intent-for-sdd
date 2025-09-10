@@ -13,7 +13,7 @@
 
 ---
 
-## Getting Started (One-Time Setup)
+## Getting Started
 
 **Depedencies:** This project is setup to work with Claude Code and Figma MCP server.
 
