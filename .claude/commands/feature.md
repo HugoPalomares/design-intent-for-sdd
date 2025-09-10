@@ -1,6 +1,6 @@
-# Create New Feature
+# /feature
 
-This prompt guides AI assistants through creating a new feature following the SDD workflow.
+This command guides AI assistants through creating a new feature following the SDD workflow.
 
 ## Required Information
 

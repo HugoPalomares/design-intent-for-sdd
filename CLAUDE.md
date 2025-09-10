@@ -13,8 +13,11 @@
 - [.claude/agents/](/.claude/agents/) - Specialist agents
 
 ## 🎯 Key Commands
-- `/new-feature [description]` | `/generate-implementation-plan` | `/document-intent` | `/create-diary-entry`
-- `Use design intent specialist to create [feature] using [reference]`
+- `/feature [description]` - Create new feature specification
+- `/plan` - Generate implementation plan from feature spec  
+- `/design [reference]` - Implement designs from visual references (launches Design Intent Specialist)
+- `/document-design-intent` - Analyze recent work and suggest design patterns to preserve
+- `/diary` - Create session diary entry
 
 ---
 **After reading**: Ask "What should we work on today?" if current work isn't clear from diary.

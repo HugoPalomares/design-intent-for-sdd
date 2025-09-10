@@ -1,6 +1,6 @@
-# Generate Implementation Plan
+# /plan
 
-This prompt creates an implementation plan after the feature spec is approved.
+This command creates an implementation plan after the feature spec is approved.
 
 ## Process
 

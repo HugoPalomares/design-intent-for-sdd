@@ -1,266 +1,162 @@
 <div align="center">
-    <h1>📋 Spec-Driven Development Boilerplate</h1>
-    <h3><em>From intent to software - An AI workflow</em></h3>
+    <h1>🎨 Design Intent for Spec-Driven Development</h1>
+    <h3><em>If design systems are your language, design intent is your dialect</em></h3>
 </div>
 
 <p align="center">
-    <strong>Transform your specifications into working code through AI, treating specs as the primary development artifact.</strong>
+    <strong>A design consistency layer for AI-driven development teams. Captures how your team specifically applies design systems.</strong>
 </p>
 
-> ## 🚀 **What's new?**
-> - **Design Intent documentation** - A new workflow for documenting your design UX decisions
-> - **Design intent specialized sub-agent** - Uses the design intent documentation to create designs that closely align with your decisions so far, increasing consistency.
+---
+
+## What is Design Intent?
+
+**Design systems** provide the universal language - components, tokens, patterns that work everywhere.
+
+**Design intent** captures your dialect - how your team specifically applies that language for your unique context.
+
+### Language vs. Dialect Examples
+
+**Language (Design System)**: Button component with primary, secondary, danger variants  
+**Your Dialect**:
+- **Enterprise**: "We never use danger buttons in data tables - only in confirmation dialogs for security compliance"
+- **Consumer**: "We use danger buttons for 'Delete' actions everywhere to create urgency and prevent accidental data loss"
+
+**Language (Design System)**: Standard spacing scale (8px, 16px, 24px...)  
+**Your Dialect**:
+- **Enterprise**: "We use 32px between sections for clear information hierarchy in dense dashboards"
+- **Consumer**: "We use 48px between sections to create breathing room and reduce cognitive load"
+
+**Language (Design System)**: Card component with elevation options  
+**Your Dialect**:
+- **Enterprise**: "We only use elevation on grey backgrounds, never nest elevated containers"
+- **Consumer**: "We layer multiple card elevations to create depth and visual interest"
+
+---
+
+## Prerequisites
+
+**Learn spec-driven development first**: [github/spec-kit](https://github.com/github/spec-kit)
+
+This project adds design intent management on top of the spec-driven development workflow. You'll need to understand feature specs and implementation plans before adding design consistency.
 
 ---
 
 ## Getting Started
 
-**Depedencies:** This project is setup to work with Claude Code and Figma MCP server.
+**Dependencies:** Claude Code and Figma MCP server
 
-Clone the repo and say exactly this to your AI:
+```bash
+git clone [this-repo]
+cd [repo-name]
+```
+
+**Onboard your AI:**
 ```
 Onboard yourself to this project by reading the CLAUDE.md file before we can continue.
 ```
 
-✅ **Outcome**: AI now understands how the SDD workflow is, what to expect, what commands and sub-agents are available and is ready to work with you on your first feature.
+✅ **AI now understands the design intent workflow and available commands**
 
 ---
 
-## Day 0 Example (your first feature!)
+## Design Intent Workflow
 
-### Step 1: Create Your Project Vision
+### 1. Visual Implementation (`/design`)
 
-Tell your AI what you want to build and ask for a brainstorm session to define the complete vision.
+When you have visual references (Figma, screenshots, mockups):
 
-**Example**: "I want to build a Netflix-style app but for cloud gaming. Help me define my vision with a brainstorm session."
-
-The AI will ask about the problem, users, success metrics, business model, and risks to capture your complete idea.
-
-✅ **Outcome**: `/memory/project-vision.md` - Your complete vision documented.
-
-### Step 2: Plan Your First Feature
-
-Pick one piece of your vision to start building. Your vision gives the AI context for why this feature matters and how it fits the bigger picture.
-
-**Say exactly this:**
 ```
-/new-feature [specific feature from your vision]
+/design [screenshot of dashboard]
 ```
 
-**Optional: Add design references**
+**What happens:**
+- Launches Design Intent Specialist for visual accuracy
+- Reviews existing design patterns for consistency  
+- Implements section by section (header, nav, main, footer)
+- Handles conflicts between reference and existing patterns
+- Asks for guidance when design decisions conflict
+
+### 2. Spec-Driven Implementation (`/implement`)
+
+When building from feature specs with design components:
+
 ```
-/new-feature [specific feature] styled like [these screenshots/this app]
-```
-
-The AI will ask about user assumptions, success metrics, and scope to create a feature specification covering WHAT you're building and WHY it matters. No technical details yet.
-
-✅ **Outcome**: `/specs/001-game-library/feature-spec.md` - A detailed plan for your feature, not code yet.
-
-### Step 3: Review and Perfect the Spec
-
-Review what the AI created. Focus especially on the user stories - these are the outline of what to expect from your feature.
-
-1. Open the file: `/specs/001-game-library/feature-spec.md`
-2. **User stories**: Do they match what you imagined? These outline exactly what users will do.
-3. **Success criteria**: Is this how you'll know it works?
-4. **Missing pieces**: What did the AI not include?
-
-**Watch out for**: Technical details (like "use React components") don't belong in the spec. The spec is only about WHAT and WHY, not HOW.
-
-Make changes by telling the AI: "Add a search bar to the spec" or "The success metric should be 20 seconds, not 30."
-
-✅ **Outcome**: A refined spec that captures exactly what you want to build.
-
-### Step 4: Create implementation Plan
-
-**Say exactly this:**
-```
-/generate-implementation-plan The spec looks perfect. Use React and Fluent UI v9
+/feature "User dashboard with metrics widgets"
+/plan
+/implement
 ```
 
-#### What happens next:
+**What happens:**
+- Reads implementation plan and identifies visual components
+- Uses Design Intent Specialist for UI elements
+- Uses general agent for backend/logic
+- Coordinates full-stack implementation
+- Maintains design consistency throughout
 
-> **AI**: I'll create an implementation plan that covers HOW to build this technically.
->
-> Creating `/specs/001-game-library/implementation-plan.md` with:
-> - Technical architecture
-> - Component structure  
-> - Time estimates
-> - Visual reference mapping (if you provided screenshots)
+### 3. Pattern Documentation (`/document-design-intent`)
 
-✅ **Outcome**: 
-- `/specs/001-game-library/implementation-plan.md` - Technical plan ready for implementation
+After building features, capture reusable patterns:
 
-### Step 5: Build the Implementation
-
-**Say exactly this:**
 ```
-Go ahead and implement it now
+/document-design-intent
 ```
 
-✅ **Outcome**: A working prototype running at http://localhost:3000 (or the AI will tell you to run `npm start` in your terminal if it's not already running).
+**What happens:**
+- Analyzes recent work for reusable design decisions
+- Suggests what should be documented and where
+- Presents summary for your review
+- **Does NOT automatically document** - you choose what to preserve
+- Documents only your dialect, not design system artifacts
 
-### Step 6: Refine Through Vibe Coding
+### 4. Iteration and Consistency
 
-Now comes the fun part - making it feel perfect. This typically takes 90% of your feature development time.
-
-**Common refinements:**
+**Vibe coding with memory:**
 ```
-Make the cards 20% bigger
-Add more space between sections
-The blue is too bright, make it softer
-Add a subtle hover animation
-Move the search bar to the right
-```
-
-Keep refining until it feels just right. The AI will make each adjustment instantly.
-
-**When you're satisfied with the result:**
-```
-/document-intent
-```
-Documents all design patterns, or:
-```
-/document-intent card-layout
-```
-Documents only a specific pattern.
-
-**Review what was documented:** Open the generated design intent files and review critically:
-- Is the format reusable for future features?
-- Did it capture design dialect (custom decisions) vs design system artifacts (standard tokens)?
-- Does it need refactoring for clarity?
-
-Tell the AI: "Remove the color section - those are just Fluent tokens" or "Refactor the spacing section to be more reusable."
-
-✅ **Outcome**: 
-- A polished prototype that feels delightful
-- Reviewed and refined design patterns ready for reuse
-
-### Step 7: Log Your Session
-
-**Say exactly this (optional - AI usually offers automatically):**
-```
-/create-diary-entry
+Make the spacing tighter
+Use our established card pattern from the agents list
+Add the same hover treatment we used in the dashboard
 ```
 
-This creates a diary entry so the AI can pick up where you left off in future sessions.
-
-#### What happens:
-
-> **AI**: I'll document what we accomplished. Creating a diary entry with:
-> - Project vision created
-> - First feature (game browsing) specified and built
-> - Key decisions made
-> - What to work on next
->
-> Diary saved! Next time you return, I'll read this and know exactly where we left off.
-
-✅ **Outcome**: `/diary/session-2024-01-15.md` - Your project's history that keeps everyone on the same page.
-
-### Step 8: Commit Your Work (Optional)
-
-**Say exactly this:**
-```
-Commit all changes with a descriptive message
-```
-
-If you want to share your work:
-```
-Push to GitHub
-```
-
-✅ **Outcome**: Your work is saved in version control and optionally shared with others.
+**Design intent ensures:**
+- New features automatically use established patterns
+- Conflicts are surfaced and resolved consciously  
+- Custom decisions are preserved and reused
+- Design quality scales with your team
 
 ---
 
-## Day 1 Example (continuing your project)
+## Key Commands
 
-### Step 1: Onboard the AI
-
-**Say exactly this:**
-```
-Onboard to this project by reading the latest diary entry and design intent folders
-```
-
-✅ **Outcome**: The AI understands your project context and existing design patterns, ready to build consistently.
-
-### Steps 2-6: Follow Day 0 Workflow
-
-The process is identical to Day 0 (Steps 2-6), but now the AI automatically:
-- **Uses existing design patterns** from your design intent folders
-- **Maintains visual consistency** across new features
-- **Builds on proven decisions** rather than starting fresh
-
-### Step 7: Log Your Session
-
-**Say exactly this:**
-```
-/create-diary-entry
-```
-
-### Step 8: Commit Changes (Optional)
-
-**Say exactly this:**
-```
-Commit all changes with a descriptive message
-```
-
-**Key difference from Day 0:** Your AI now has design memory, ensuring every new feature matches your established visual language.
+- `/feature [description]` - Create feature specification
+- `/plan` - Generate implementation plan  
+- `/design [reference]` - Implement from visual references
+- `/implement` - Execute feature plan (design + engineering)
+- `/document-design-intent` - Analyze and suggest design patterns to preserve
+- `/diary` - Document session progress
 
 ---
 
-## Advanced Techniques
+## File Structure
 
-### Design Intent Specialist (For Visual Accuracy & Consistency)
-
-When you need to implement visual references accurately and maintain consistency across your project, use the Design Intent Specialist agent.
-
-#### When to Use
-
-Use the specialist when:
-- You have Figma designs or screenshots to implement accurately
-- You need complex visual extraction and implementation
-- You're working with detailed visual references that require precision
-- You want to ensure consistent visual language across features
-
-#### How to Trigger
-
-For visual implementations:
 ```
-Use design intent specialist to create [feature] using [reference]
+/design-intent/
+  /components/        # Component-specific patterns
+  /foundations/       # Base design decisions  
+  /patterns/          # Layout and composition patterns
+  design-intent-template.md  # Template for new patterns
+
+/specs/               # Feature specifications and plans
+/diary/               # Session documentation  
+/memory/              # Project context and principles
 ```
 
-#### New Implementation-First Workflow
+---
 
-> **You**: Use design intent specialist to create the gallery using this Figma reference
->
-> **AI**: Starting design intent specialist...
-> 
-> [Specialist focuses on visual accuracy through iteration until satisfied]
-> 
-> **You**: [After multiple refinements] This looks perfect now. /document-intent gallery-layout
-> 
-> **AI**: ✓ Design dialect documented at:
-> - /design-intent/patterns/gallery-layout.md (3-card grid pattern)
-> - /design-intent/foundations/custom-spacing.md (48px section breaks)
+## Why Design Intent Matters
 
-#### What Makes This Different
+**Without design intent:** Each AI interaction starts from scratch, leading to design drift and inconsistency as you build.
 
-**Old approach**: Extract specs → Document → Implement → Often poor visual match
-**New approach**: Focus on visual accuracy → Iterate until perfect → Document what worked
+**With design intent:** Your design decisions become organizational memory that scales across features, teams, and time.
 
-#### Key Features
-
-- **Implementation-first**: Prioritizes visual accuracy over upfront documentation
-- **Consistency enforcement**: Always checks and reuses existing design intent patterns first
-- **Iteration support**: Helps you refine through "vibe coding" until satisfied  
-- **Smart documentation**: Use `/document-intent` to capture only design dialect (not design system artifacts)
-- **Custom component tracking**: Automatically tags and tracks custom components for technical debt auditing
-
-#### Documentation Control
-
-- **Global capture**: `/document-intent` - Documents all custom patterns
-- **Focused capture**: `/document-intent card-layout` - Documents specific patterns only
-- **On-demand only**: No documentation overhead during iteration phase
-
-✅ **Outcome**: Visually accurate implementations that match references, with design dialect documented only after proven success.
+**The result:** Consistent, intentional design that feels cohesive even when built iteratively by AI.

@@ -1,11 +1,11 @@
-# Create Diary Entry Command
+# /diary
 
 This command creates a session diary entry to document development progress, decisions, and handoff context.
 
 ## Usage
 
 ```
-/create-diary-entry
+/diary
 ```
 
 Creates a new diary entry for the current date, or updates the existing entry if one already exists for today.
