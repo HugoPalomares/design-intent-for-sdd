@@ -54,7 +54,7 @@ Same codebase, same prompt, same Figma references using Figma MCP - but two diff
 
 **Learn spec-driven development first**: [github/spec-kit](https://github.com/github/spec-kit)
 
-This project adds design intent workflows on top of spec-driven development. You'll need to understand feature specs and implementation plans before adding design consistency.
+This project adds design intent workflows on top of spec-driven development as defined by the work and research of [John Lam](https://github.com/jflam). You'll need to understand feature specs and implementation plans before adding design consistency.
 
 ---
 
@@ -145,11 +145,74 @@ After implementing and iteratively improving your app, reflect on patterns worth
 
 /specs/               # Feature specifications and plans
 /diary/               # Session documentation  
-/memory/              # Project context and principles
+/memory/              # Project context and principlesThank you. 
 ```
 
 ---
 
-## 🙏 Acknowledgements
+## Example breakdown: How does design intent work?
 
-This project is heavily influenced by and based on the work and research of [John Lam](https://github.com/jflam).
+![Implementation using established design intent](./readme-assets/with1.gif)
+![Implementation using established design intent](./readme-assets/with2.gif)
+
+Design intent guided the agent to apply established patterns:
+
+**Element:** Header of L2 main section. 
+
+**Pattern used:** `/design-intent/patterns/l2-layout.md`. 
+
+```markdown
+(Excerpt)...
+## Decision
+Use a consistent header structure with back navigation on the left, action buttons on the right using large variant, and responsive overflow menu behavior when space is constrained.
+
+## When to Use
+All L2 detail pages that require back navigation and action buttons (person details, agent details, etc.).
+
+## Components
+- Button (large variant)
+- OverflowButton 
+- Existing responsive overflow menu pattern
+
+## Why
+Provides consistent navigation experience, maintains action accessibility across screen sizes, and ensures all actions remain discoverable regardless of screen width.
+
+## Dependencies
+- OverflowButton component with responsive menu behavior
+- Large button variant from Fluent UI
+- Page layout system
+...
+```
+
+**Element:** Table.
+
+
+**Pattern used:** `/design-intent/component/data-table.md`
+
+
+```markdown
+(Excerpt)...
+## Decision
+Fluent Table-based implementation with integrated skeleton loading, intelligent state management, and flexible column sizing
+
+## When to Use
+- **Structured data display**: Lists, directories, catalogs requiring tabular presentation
+- **Interactive data**: Content that users scan, sort, filter, or select
+- **Performance requirements**: Large datasets needing loading states and pagination
+- **Consistent behavior**: Standardized table interactions across application
+
+## Components
+- `DataTable` - Main reusable table component
+- `Skeleton` loading states for initial and infinite scroll loading
+- Fluent Table components for base functionality
+
+## Why
+Migrated from DataGrid to Table for better column sizing control; skeleton loading prevents jarring content shifts; intelligent state management optimizes perceived performance; flexible column sizing adapts to content naturally
+
+## Dependencies
+Fluent UI Table components, Skeleton components, infinite scroll utilities, responsive breakpoint system
+...
+```
+
+
+
