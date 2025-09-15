@@ -7,7 +7,8 @@
     <strong>A design consistency layer for AI-driven development teams using <a href="https://github.com/github/spec-kit">Github/Spec Kit</a>. Captures how your team specifically applies design systems.</strong>
 </p>
 
----
+
+
 
 ## Before & after
 
@@ -36,7 +37,8 @@ Coded WITHOUT design intent
 </tr>
 </table>
 
----
+
+
 
 ### Main action on page
 <table style="width: 100%; table-layout: fixed;">
@@ -59,7 +61,8 @@ Without Design Intent
 - Button uses 'Large' size per design intent (not default 'Medium')
 - Uses 'Primary' appearance per intent for main actions (not Figma's 'Secondary')
 
----
+
+
 
 ### Correct Fluent components
 <table style="width: 100%; table-layout: fixed;">
@@ -81,7 +84,8 @@ Without Design Intent
 
 - Reused existing design system component (not built from scratch)
 
----
+
+
 
 ### Keyboard tab behavior (Accessibility)
 <table style="width: 100%; table-layout: fixed;">
@@ -103,7 +107,8 @@ Without Design Intent
 
 - Correct keyboard tab behavior per accessibility compliance rules
 
----
+
+
 
 ### Correct page template
 <table style="width: 100%; table-layout: fixed;">
@@ -126,7 +131,8 @@ Without Design Intent
 - Follows correct page template with top navigation (back button + responsive action buttons)
 - Custom responsive behavior proves intent was used (too specific to be naturally generated)
 
----
+
+
 
 ## What is Design Intent?
 
