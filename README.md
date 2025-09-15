@@ -7,7 +7,22 @@
     <strong>A design consistency layer for AI-driven development teams using <a href="https://github.com/github/spec-kit">Github/Spec Kit</a>. Captures how your team specifically applies design systems.</strong>
 </p>
 
+## 📑 Table of Contents
 
+- [✨ Before & After](#-before--after)
+- [🎯 What is Design Intent?](#-what-is-design-intent)
+- [📋 Prerequisites](#-prerequisites)
+- [🚀 Getting Started](#-getting-started)
+- [🔄 Design Intent Workflow](#-design-intent-workflow)
+  - [Visual Implementation](#1-visual-implementation-design)
+  - [Spec-Driven Implementation](#2-spec-driven-implementation-feature--plan--implement)
+  - [Pattern Documentation](#3-pattern-documentation-document-design-intent)
+- [⌨️ Key Commands](#️-key-commands)
+- [📁 File Structure](#-file-structure)
+- [💡 Examples of Design Intent](#-examples-of-design-intent)
+
+
+---
 
 
 ## ✨ Before & After
