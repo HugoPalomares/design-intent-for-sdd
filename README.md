@@ -9,24 +9,122 @@
 
 ---
 
-## Examples
+## Before & after
 
-Same codebase, same prompt, same Figma references using Figma MCP - but two different results when using design intent workflows versus letting the agent vibe code:
+Same codebase, same prompts, same Figma designs - but different results with and without design intent.
 
-**With design intent:** 
+<table style="width: 100%; table-layout: fixed;">
+<tr style="width: 100%;">
+<td style="width: 33%; vertical-align: top;">
 
-![Implementation using established design intent](./readme-assets/with1.gif)
-![Implementation using established design intent](./readme-assets/with2.gif)
-- Correct component usage
-- Responsive reflow follows established team patterns
+Figma original
+<img src="./readme-assets/figma-original-main-page.png" style="width: 100%;">
 
-**Without design intent:** 
+</td>
+<td style="width: 33%; vertical-align: top;">
 
-![Implementation without design intent patterns](./readme-assets/without1.gif)
-![Implementation without design intent patterns](./readme-assets/without2.gif)
-- Starting from scratch each time
-- Inconsistent spacing and component choices
-- AI attempts responsive reflow using best guesses
+Coded WITH design intent
+<img src="./readme-assets/with-intent-main-page.png" style="width: 100%;">
+
+</td>
+<td style="width: 33%; vertical-align: top;">
+
+Coded WITHOUT design intent
+<img src="./readme-assets/without-intent-main-page.png" style="width: 100%;">
+
+</td>
+</tr>
+</table>
+
+---
+
+### Main action on page
+<table style="width: 100%; table-layout: fixed;">
+<tr>
+<td style="width: 50%; vertical-align: top;">
+
+With Design Intent
+![Image 1](./readme-assets/w-main-action.png)
+
+</td>
+<td style="width: 50%; vertical-align: top;">
+
+Without Design Intent
+![Image 1](./readme-assets/wo-main-action.png)
+
+</td>
+</tr>
+</table>
+
+- Button uses 'Large' size per design intent (not default 'Medium')
+- Uses 'Primary' appearance per intent for main actions (not Figma's 'Secondary')
+
+---
+
+### Correct Fluent components
+<table style="width: 100%; table-layout: fixed;">
+<tr>
+<td style="width: 50%; vertical-align: top;">
+
+With Design Intent
+![Image 1](./readme-assets/w-fluent.png)
+
+</td>
+<td style="width: 50%; vertical-align: top;">
+
+Without Design Intent
+![Image 1](./readme-assets/wo-fluent.png)
+
+</td>
+</tr>
+</table>
+
+- Reused existing design system component (not built from scratch)
+
+---
+
+### Keyboard tab behavior (Accessibility)
+<table style="width: 100%; table-layout: fixed;">
+<tr>
+<td style="width: 50%; vertical-align: top;">
+
+With Design Intent
+![Image 1](./readme-assets/w-a11y.gif)
+
+</td>
+<td style="width: 50%; vertical-align: top;">
+
+Without Design Intent
+![Image 1](./readme-assets/wo-a11y.gif)
+
+</td>
+</tr>
+</table>
+
+- Correct keyboard tab behavior per accessibility compliance rules
+
+---
+
+### Correct page template
+<table style="width: 100%; table-layout: fixed;">
+<tr>
+<td style="width: 50%; vertical-align: top;">
+
+With Design Intent
+![Image 1](./readme-assets/w-template.gif)
+
+</td>
+<td style="width: 50%; vertical-align: top;">
+
+Without Design Intent
+![Image 1](./readme-assets/wo-template.gif)
+
+</td>
+</tr>
+</table>
+
+- Follows correct page template with top navigation (back button + responsive action buttons)
+- Custom responsive behavior proves intent was used (too specific to be naturally generated)
 
 ---
 
@@ -150,12 +248,7 @@ After implementing and iteratively improving your app, reflect on patterns worth
 
 ---
 
-## Example breakdown: How does design intent work?
-
-![Implementation using established design intent](./readme-assets/with1.gif)
-![Implementation using established design intent](./readme-assets/with2.gif)
-
-Design intent guided the agent to apply established patterns:
+## Examples of design intent
 
 **Element:** Header of L2 main section. 
 
