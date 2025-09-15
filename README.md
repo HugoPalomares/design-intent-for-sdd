@@ -132,6 +132,7 @@ Without Design Intent
 - Custom responsive behavior proves intent was used (too specific to be naturally generated)
 
 
+---
 
 
 ## What is Design Intent?
@@ -152,7 +153,8 @@ Without Design Intent
 - **Enterprise**: "We use 32px between sections for clear information hierarchy in dense dashboards"
 - **Consumer**: "We use 48px between sections to create breathing room and reduce cognitive load"
 
----
+
+
 
 ## Prerequisites
 
@@ -160,7 +162,8 @@ Without Design Intent
 
 This project adds design intent workflows on top of spec-driven development as defined by the work and research of [John Lam](https://github.com/jflam). You'll need to understand feature specs and implementation plans before adding design consistency.
 
----
+
+
 
 ## Getting Started
 
@@ -178,7 +181,8 @@ Onboard yourself to this project by reading the CLAUDE.md file before we can con
 
 ✅ **AI now understands the design intent workflow and available commands**
 
----
+
+
 
 ## Design Intent Workflow
 
@@ -225,7 +229,8 @@ After implementing and iteratively improving your app, reflect on patterns worth
 - Presents summary for your review - **you choose what to document**
 - Documents only your custom design dialect, not standard design system artifacts
 
----
+
+
 
 ## Key Commands
 
@@ -236,7 +241,8 @@ After implementing and iteratively improving your app, reflect on patterns worth
 - `/document-design-intent` - Analyze and suggest design patterns to preserve
 - `/diary` - Save session context and next steps for future agents
 
----
+
+
 
 ## File Structure
 
@@ -252,7 +258,8 @@ After implementing and iteratively improving your app, reflect on patterns worth
 /memory/              # Project context and principlesThank you. 
 ```
 
----
+
+
 
 ## Examples of design intent
 
