@@ -10,7 +10,7 @@
 
 
 
-## Before & after
+## ✨ Before & After
 
 Same codebase, same prompts, same Figma designs - but different results with and without design intent.
 
@@ -135,7 +135,7 @@ Without Design Intent
 ---
 
 
-## What is Design Intent?
+## 🎯 What is Design Intent?
 
 **Design systems** provide the universal language - components, tokens, patterns that work everywhere.
 
@@ -156,7 +156,7 @@ Without Design Intent
 
 
 
-## Prerequisites
+## 📋 Prerequisites
 
 **Learn spec-driven development first**: [github/spec-kit](https://github.com/github/spec-kit)
 
@@ -165,7 +165,7 @@ This project adds design intent workflows on top of spec-driven development as d
 
 
 
-## Getting Started
+## 🚀 Getting Started
 
 **Dependencies:** Claude Code and Figma MCP server
 
@@ -184,7 +184,7 @@ Onboard yourself to this project by reading the CLAUDE.md file before we can con
 
 
 
-## Design Intent Workflow
+## 🔄 Design Intent Workflow
 
 ### 1. Visual Implementation (`/design`)
 
@@ -232,7 +232,7 @@ After implementing and iteratively improving your app, reflect on patterns worth
 
 
 
-## Key Commands
+## ⌨️ Key Commands
 
 - `/feature [description]` - Create feature specification
 - `/plan` - Generate implementation plan  
@@ -244,7 +244,7 @@ After implementing and iteratively improving your app, reflect on patterns worth
 
 
 
-## File Structure
+## 📁 File Structure
 
 ```
 /design-intent/
@@ -261,7 +261,7 @@ After implementing and iteratively improving your app, reflect on patterns worth
 
 
 
-## Examples of design intent
+## 💡 Examples of Design Intent
 
 **Element:** Header of L2 main section. 
 
